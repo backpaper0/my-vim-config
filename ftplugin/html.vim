@@ -1,5 +1,5 @@
-packadd! html5.vim
-packadd! vim-css3-syntax
+" packadd! html5.vim
+" packadd! vim-css3-syntax
 
 set expandtab
 set tabstop=2

@@ -1,5 +1,5 @@
-packadd! typescript-vim
-packadd! html5.vim
+" packadd! typescript-vim
+" packadd! html5.vim
 
 set expandtab
 set tabstop=2

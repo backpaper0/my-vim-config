@@ -32,7 +32,11 @@ for i in \
     othree/html5.vim \
     rust-lang/rust.vim \
 ; do
-    PLUGIN_PATH=$PACK_PATH/opt/$(echo $i | awk -F '/' '{print $NF}')
+    # FIXME: ftplugin内のファイルでpackaddしても有効化されないため
+	# optではなくstartに置くことにする。
+	# (runtimepathには追加されるけれどプラグインは読み込まれてない)
+	# 本来はoptに置いて必要に応じてプラグインを読み込みたい。
+    PLUGIN_PATH=$PACK_PATH/start/$(echo $i | awk -F '/' '{print $NF}')
     if [ ! -d $PLUGIN_PATH ]; then
 		git clone http://github.com/$i.git $PLUGIN_PATH
 	fi

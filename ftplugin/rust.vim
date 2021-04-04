@@ -1,4 +1,4 @@
-packadd! rust.vim
+" packadd! rust.vim
 
 " https://github.com/rust-lang/rust.vim
 nnoremap <silent> <Leader>cr :<C-u>Crun<CR>
