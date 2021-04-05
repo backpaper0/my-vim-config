@@ -27,6 +27,7 @@ for i in \
 done
 
 for i in \
+	Quramy/tsuquyomi \
     hail2u/vim-css3-syntax \
     leafgarland/typescript-vim \
     othree/html5.vim \
