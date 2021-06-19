@@ -6,6 +6,7 @@ PACK_PATH=$(cd $(dirname $0)/..; pwd)/pack/favorite
 
 mkdir -p $PACK_PATH/{start,opt}
 
+# 共通的なプラグイン
 for i in \
     Shougo/defx.nvim \
     Shougo/denite.nvim \
@@ -26,12 +27,14 @@ for i in \
     fi
 done
 
+# ファイルタイプ別のプラグイン
 for i in \
     Quramy/tsuquyomi \
     hail2u/vim-css3-syntax \
     leafgarland/typescript-vim \
     othree/html5.vim \
     rust-lang/rust.vim \
+	chrisbra/csv.vim \
 ; do
     # FIXME: ftplugin内のファイルでpackaddしても有効化されないため
     # optではなくstartに置くことにする。
