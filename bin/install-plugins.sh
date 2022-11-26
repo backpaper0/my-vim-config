@@ -8,18 +8,9 @@ mkdir -p $PACK_PATH/{start,opt}
 
 # 共通的なプラグイン
 for i in \
-    Shougo/defx.nvim \
-    Shougo/denite.nvim \
-    Shougo/deoplete.nvim \
-    kannokanno/previm \
-    mattn/vim-lsp-settings \
-    neoclide/denite-git \
-    prabirshrestha/async.vim \
-    prabirshrestha/vim-lsp \
-    roxma/nvim-yarp \
-    roxma/vim-hug-neovim-rpc \
-    tyru/open-browser.vim \
     vim-jp/vimdoc-ja \
+	prabirshrestha/vim-lsp \
+	mattn/vim-lsp-settings \
 ; do
     PLUGIN_PATH=$PACK_PATH/start/$(echo $i | awk -F '/' '{print $NF}')
     if [ ! -d $PLUGIN_PATH ]; then
@@ -29,12 +20,8 @@ done
 
 # ファイルタイプ別のプラグイン
 for i in \
-    Quramy/tsuquyomi \
     hail2u/vim-css3-syntax \
-    leafgarland/typescript-vim \
     othree/html5.vim \
-    rust-lang/rust.vim \
-	chrisbra/csv.vim \
 ; do
     # FIXME: ftplugin内のファイルでpackaddしても有効化されないため
     # optではなくstartに置くことにする。

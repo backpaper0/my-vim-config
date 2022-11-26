@@ -6,10 +6,10 @@
 
 `bin/install-plugins.sh`を実行してプラグインをインストールする。
 
-`$HOME/vimrc`から`main.vim`を読み込む。
+`$HOME/.vimrc`から`main.vim`を読み込む。
 
 ```vim
-" $HOME/vimrc に書く
+" $HOME/.vimrc に書く
 source /path/to/main.vim
 ```
 
