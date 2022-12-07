@@ -13,6 +13,8 @@ for i in \
 	mattn/vim-lsp-settings \
 	prabirshrestha/asyncomplete.vim \
 	prabirshrestha/asyncomplete-lsp.vim \
+	junegunn/fzf \
+	junegunn/fzf.vim \
 ; do
     PLUGIN_PATH=$PACK_PATH/start/$(echo $i | awk -F '/' '{print $NF}')
     if [ ! -d $PLUGIN_PATH ]; then
